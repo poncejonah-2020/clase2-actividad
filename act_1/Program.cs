@@ -22,6 +22,17 @@ namespace actividad_1
             else
                 Console.WriteLine("no tiene la llave");
 
+            foreach(KeyValuePair<string, string> elemento in persona)
+            {
+                Console.WriteLine("clave: "+elemento.Key+" - "+"valor: "+ elemento.Value);
+            }
+
+            if(persona.ContainsKey("Mariana"))
+                persona["mariana"] =  "58251425";
+            Console.WriteLine("el nuevo numero de mariana es: "+ persona["Mariana"]);
+
+
+
 
             Console.ReadLine();
             
